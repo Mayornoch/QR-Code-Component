@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | QR code component</title>
+    <link rel="stylesheet" href="Design.css" />
+
+    <!--Links from google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: hsl(212, 45%, 89%);
+        --container-color: hsl(0, 0%, 100%);
+        --text-color-1: hsl(218, 44%, 22%);
+        --text-color-2: hsl(220, 15%, 55%);
+        --font-family: Outfit;
+        --font-size-paragraph: 13px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: var(--bg-color);
+        font-family: var(--font-family);
+        height: 100%;
+      }
+      .container {
+        width: 20%;
+        height: 100%;
+        margin: 9% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--container-color);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 14px 20px rgba(145, 142, 142, 0.25);
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+      }
+      .text h3 {
+        color: var(--text-color-1);
+        font-weight: 700;
+      }
+      .text p {
+        color: var(--text-color-2);
+        margin-top: 15px;
+        font-size: var(--font-size-paragraph);
+        font-weight: 400;
+      }
+      @media screen and (min-width: 1440px) {
+        .container {
+          width: 20%;
+          margin: 12% auto;
+        }
+      }
+      @media screen and (max-width: 375px) {
+        .container {
+          width: 100%;
+          margin: 32% auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--The image is wrapped inside the container-->
+      <div class="img">
+        <img src="./images/image-qr-code.png" alt="QR-Code" />
+      </div>
+
+      <!--The text under the image-->
+      <div class="text">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
